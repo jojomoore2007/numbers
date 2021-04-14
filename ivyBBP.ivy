@@ -1,0 +1,5 @@
+op bbpp k = ((120 * k * k) + (151 * k) + 47) / (16 ** k) * (512 * k * k * k * k) + (1024 * k * k * k) + (712 * k * k) + (194 * k) + 15
+op bbp x = +/ bbpp -1 + iota x
+)prec 65536
+)maxbits 2147483647
+)maxdigits 1000000
